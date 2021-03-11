@@ -1,0 +1,57 @@
+:root {
+    background: black;
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    color: var(--text_light);
+}
+button {
+    color: blue;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.container {
+    padding: 0 4px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top form {
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.top form input {
+    font-size: 1rem;
+    padding: 5px 5px;
+    border-bottom: 2px solid;
+    height: 20px;
+}
+
+@media screen {
+    .top form {
+        flex-direction: column;
+    }
+    .top form input {
+        width: 50%;
+    }
+}
+
+.ajax-section {
+    margin: 20px;
+}
+
+.ajax-section .citylist {
+display: grid;
+grid-gap: 10px;
+}
